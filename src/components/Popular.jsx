@@ -22,6 +22,7 @@ function Popular() {
         } else {
             try{
                 await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_SPOONACULAR_API_KEY}&number=9`).then(response => response.json()).then(data => {
+                    data = data.recipes;
                     setPopular(data)
                     localStorage.setItem('popular', JSON.stringify(data))
                 })

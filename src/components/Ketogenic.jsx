@@ -22,6 +22,7 @@ function Ketogenic() {
         } else {
             try{
                 await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_SPOONACULAR_API_KEY}&diet=ketogenic&number=9`).then(response => response.json()).then(data => {
+                    data = data.recipes;
                     setKetogenic(data);
                     localStorage.setItem('ketogenic', JSON.stringify(data))
                 })

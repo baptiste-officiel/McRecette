@@ -24,6 +24,7 @@ function Cuisine() {
         } else { 
             try{
                 await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_SPOONACULAR_API_KEY}&number=9&tags=${name}`).then(response => response.json()).then(data => {
+                    data = data.recipes;
                     setCuisine(data);
                     localStorage.setItem(`${name}`, JSON.stringify(data))
                 })
