@@ -57,7 +57,7 @@ function Popular() {
           }
         }
       }}>
-      {popular.map((recipe) => 
+      {popular && popular.map((recipe) => 
         <SplideSlide key={recipe.id}>
           <Card>
             <Link to={`/recipe/${recipe.id}`}>

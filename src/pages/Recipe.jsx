@@ -39,6 +39,8 @@ function Recipe() {
       exit={{opacity: 0}}
       transition={{duration: 1.2}}
     >
+      {recipe && 
+      <>
       <h2>{recipe.title}</h2>
       {recipe.image &&
        <div className="image-container">
@@ -60,6 +62,8 @@ function Recipe() {
         </ul>
         )}
       </Info>
+      </>
+      }
     </DetailWrapper>
   )
 }

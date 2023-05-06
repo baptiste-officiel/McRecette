@@ -51,7 +51,7 @@ function Ketogenic() {
           }
         }
       }}>
-      {ketogenic.map((recipe) => 
+      {ketogenic && ketogenic.map((recipe) => 
         <SplideSlide key={recipe.id}>
           <Card>
             <Link to={`/recipe/${recipe.id}`}>
