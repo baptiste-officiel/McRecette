@@ -4,6 +4,7 @@ import Cuisine from './Cuisine';
 import Searched from './Searched';
 import Recipe from './Recipe';
 import { AnimatePresence } from "framer-motion"
+import Lost from './Lost';
 
 
 function Pages() {
@@ -15,6 +16,7 @@ function Pages() {
       <Route path='/cuisine/:cuisine' element={<Cuisine />} />
       <Route path='/searched/:search' element={<Searched />} />
       <Route path='/recipe/:id' element={<Recipe /> } />
+      <Route path='*' element={<Lost />} />
     </Routes>
     </AnimatePresence>
   )
