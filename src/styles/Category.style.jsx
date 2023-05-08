@@ -31,7 +31,7 @@ export const SLink = styled(NavLink)`
     cursor: pointer;
     transform: scale(0.8);
 
-    h4{
+    h3{
         color: #fff;
         font-size: 0.8rem;
         font-weight: 400;

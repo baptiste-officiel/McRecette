@@ -7,19 +7,19 @@ function Category() {
     <List>
         <SLink to={'/cuisine/Italian'} >
             <GiFullPizza />
-            <h4>Italian</h4>
+            <h3>Italian</h3>
         </SLink>
         <SLink to={'/cuisine/American'}>
             <GiHamburger />
-            <h4>American</h4>
+            <h3>American</h3>
         </SLink>
         <SLink to={'/cuisine/Thai'}>
             <GiNoodles />
-            <h4>Thaï</h4>
+            <h3>Thaï</h3>
         </SLink>
         <SLink to={'/cuisine/Japanese'}>
             <GiChopsticks />
-            <h4>Japanese</h4>
+            <h3>Japanese</h3>
         </SLink>
     </List>
   )
