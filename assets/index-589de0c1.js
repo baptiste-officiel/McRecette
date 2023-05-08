@@ -101,7 +101,7 @@ Error generating stack: `+o.message+`
     cursor: pointer;
     transform: scale(0.8);
 
-    h4{
+    h3{
         color: #fff;
         font-size: 0.8rem;
         font-weight: 400;
@@ -122,7 +122,7 @@ Error generating stack: `+o.message+`
         border-radius: 1rem;
         padding: 1rem;
     }
-`;function r3(){return _.jsxs(n3,{children:[_.jsxs(Es,{to:"/cuisine/Italian",children:[_.jsx(rw,{}),_.jsx("h4",{children:"Italian"})]}),_.jsxs(Es,{to:"/cuisine/American",children:[_.jsx(iw,{}),_.jsx("h4",{children:"American"})]}),_.jsxs(Es,{to:"/cuisine/Thai",children:[_.jsx(sw,{}),_.jsx("h4",{children:"Thaï"})]}),_.jsxs(Es,{to:"/cuisine/Japanese",children:[_.jsx(nw,{}),_.jsx("h4",{children:"Japanese"})]})]})}const i3=ot(Er)`
+`;function r3(){return _.jsxs(n3,{children:[_.jsxs(Es,{to:"/cuisine/Italian",children:[_.jsx(rw,{}),_.jsx("h3",{children:"Italian"})]}),_.jsxs(Es,{to:"/cuisine/American",children:[_.jsx(iw,{}),_.jsx("h3",{children:"American"})]}),_.jsxs(Es,{to:"/cuisine/Thai",children:[_.jsx(sw,{}),_.jsx("h3",{children:"Thaï"})]}),_.jsxs(Es,{to:"/cuisine/Japanese",children:[_.jsx(nw,{}),_.jsx("h3",{children:"Japanese"})]})]})}const i3=ot(Er)`
     text-decoration: none;
     color: #313131;
 
