@@ -385,6 +385,11 @@ Error generating stack: `+o.message+`
 `;function $5(){let e=Jf();const[t,n]=k.useState([]),[r,i]=k.useState("instructions");k.useEffect(()=>{o(e.id)},[e.id]);const o=async s=>{const a=localStorage.getItem(`${s}`);if(a)n(JSON.parse(a));else try{await fetch(`https://api.spoonacular.com/recipes/${s}/information?apiKey=${{}.VITE_SPOONACULAR_API_KEY}`).then(l=>l.json()).then(l=>{n(l),localStorage.setItem(`${s}`,JSON.stringify(l))})}catch(l){console.log("🚀 ~ file: Popular.jsx:10 ~ getPopular ~ err:",l)}};return _.jsx(z5,{animate:{opacity:1},initial:{opacity:0},exit:{opacity:0},transition:{duration:1.2},children:t&&_.jsxs(_.Fragment,{children:[_.jsx("h2",{children:t.title}),t.image&&_.jsx("div",{className:"image-container",children:_.jsx("img",{src:t.image,alt:t.title})}),_.jsxs(F5,{children:[_.jsx(Im,{className:r==="instructions"?"active":"",onClick:()=>i("instructions"),children:"Instructions"}),_.jsx(Im,{className:r==="ingredients"?"active":"",onClick:()=>i("ingredients"),children:"Ingredients "}),r==="instructions"&&_.jsxs(_.Fragment,{children:[_.jsx("p",{dangerouslySetInnerHTML:{__html:t.summary}}),_.jsx("div",{dangerouslySetInnerHTML:{__html:t.instructions}})]}),r==="ingredients"&&_.jsx("ul",{children:t.extendedIngredients.map(s=>_.jsx("li",{children:s.original},s.id))})]})]})})}const B5="/McRecette/assets/error404-1159a8fc.gif",U5=ot.div`
     margin: 2rem auto 4rem;
     text-align: center;
+    width: 80%;
+    img{
+        width: 100%;
+        max-width: 600px;
+    }
     p{
         margin-bottom: 3rem;
     }
