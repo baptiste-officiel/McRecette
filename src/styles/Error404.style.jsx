@@ -4,6 +4,11 @@ import styled from "styled-components";
 export const Error = styled.div`
     margin: 2rem auto 4rem;
     text-align: center;
+    width: 80%;
+    img{
+        width: 100%;
+        max-width: 600px;
+    }
     p{
         margin-bottom: 3rem;
     }
